@@ -1,0 +1,439 @@
+{
+  "title": "Kratownica Trójkątna (Węzły Złączone)",
+  "description": "Kratownica z pełnym stężeniem trójkątnym - zastrzały zbiegają się w wspólnych węzłach",
+  "summary": {
+    "num_nodes": 10,
+    "num_elements": 21,
+    "max_displacement_mm": 0.8672079892438764,
+    "max_displacement_node": 8,
+    "max_tension_kN": 15.943771313930126,
+    "max_tension_element": 14,
+    "max_compression_kN": -45.731386373504755,
+    "max_compression_element": 6,
+    "max_stress_MPa": -18.292554549401903,
+    "max_stress_element": 6,
+    "total_mass_kg": 1237.1052354563965,
+    "equilibrium": {
+      "sum_loads_x_kN": -50.0,
+      "sum_loads_y_kN": 0.0,
+      "sum_reactions_x_kN": 49.99999999999993,
+      "sum_reactions_y_kN": -1.7763568394002505e-14,
+      "error_norm_N": 7.499885442698834e-11,
+      "is_balanced": true
+    }
+  },
+  "nodes": [
+    {
+      "id": 0,
+      "name": "Podpora lewa",
+      "x_m": 2.0,
+      "y_m": 0.0,
+      "fixed_x": true,
+      "fixed_y": true,
+      "load_x_kN": 0.0,
+      "load_y_kN": 0.0,
+      "displacement": {
+        "ux_mm": 0.0,
+        "uy_mm": 0.0,
+        "total_mm": 0.0
+      },
+      "reaction": {
+        "Rx_kN": 49.99999999999993,
+        "Ry_kN": 16.66666666666665,
+        "R_total_kN": 52.70462766947291
+      }
+    },
+    {
+      "id": 1,
+      "name": "Pas dolny środek",
+      "x_m": 5.0,
+      "y_m": 0.0,
+      "fixed_x": false,
+      "fixed_y": false,
+      "load_x_kN": 0.0,
+      "load_y_kN": 0.0,
+      "displacement": {
+        "ux_mm": -0.1746021847414394,
+        "uy_mm": 0.02969667058673287,
+        "total_mm": 0.1771096134048648
+      },
+      "reaction": {
+        "Rx_kN": 0.0,
+        "Ry_kN": 0.0,
+        "R_total_kN": 0.0
+      }
+    },
+    {
+      "id": 2,
+      "name": "Podpora prawa",
+      "x_m": 8.0,
+      "y_m": 0.0,
+      "fixed_x": false,
+      "fixed_y": true,
+      "load_x_kN": 0.0,
+      "load_y_kN": 0.0,
+      "displacement": {
+        "ux_mm": -0.21738654742056918,
+        "uy_mm": 0.0,
+        "total_mm": 0.21738654742056918
+      },
+      "reaction": {
+        "Rx_kN": 0.0,
+        "Ry_kN": -16.666666666666668,
+        "R_total_kN": 16.666666666666668
+      }
+    },
+    {
+      "id": 3,
+      "name": "Pas dolny prawy",
+      "x_m": 10.0,
+      "y_m": 0.0,
+      "fixed_x": false,
+      "fixed_y": false,
+      "load_x_kN": 0.0,
+      "load_y_kN": 0.0,
+      "displacement": {
+        "ux_mm": -0.19299446955488178,
+        "uy_mm": 0.31012750348479673,
+        "total_mm": 0.36527514793164184
+      },
+      "reaction": {
+        "Rx_kN": 0.0,
+        "Ry_kN": 0.0,
+        "R_total_kN": 0.0
+      }
+    },
+    {
+      "id": 4,
+      "name": "Pas środkowy L0",
+      "x_m": 0.0,
+      "y_m": 2.0,
+      "fixed_x": false,
+      "fixed_y": false,
+      "load_x_kN": 0.0,
+      "load_y_kN": 0.0,
+      "displacement": {
+        "ux_mm": -0.23154932431782305,
+        "uy_mm": -0.23154932431782302,
+        "total_mm": 0.3274601948085916
+      },
+      "reaction": {
+        "Rx_kN": 0.0,
+        "Ry_kN": 0.0,
+        "R_total_kN": 0.0
+      }
+    },
+    {
+      "id": 5,
+      "name": "Pas środkowy L1",
+      "x_m": 2.0,
+      "y_m": 2.0,
+      "fixed_x": false,
+      "fixed_y": false,
+      "load_x_kN": 0.0,
+      "load_y_kN": 0.0,
+      "displacement": {
+        "ux_mm": -0.23154932431782305,
+        "uy_mm": -0.014108907504131948,
+        "total_mm": 0.23197877244049842
+      },
+      "reaction": {
+        "Rx_kN": 0.0,
+        "Ry_kN": 0.0,
+        "R_total_kN": 0.0
+      }
+    },
+    {
+      "id": 6,
+      "name": "Pas środkowy L2",
+      "x_m": 5.0,
+      "y_m": 2.0,
+      "fixed_x": false,
+      "fixed_y": false,
+      "load_x_kN": 0.0,
+      "load_y_kN": 0.0,
+      "displacement": {
+        "ux_mm": -0.24227587890523136,
+        "uy_mm": 0.07407687913742132,
+        "total_mm": 0.25334755874498266
+      },
+      "reaction": {
+        "Rx_kN": 0.0,
+        "Ry_kN": 0.0,
+        "R_total_kN": 0.0
+      }
+    },
+    {
+      "id": 7,
+      "name": "Pas środkowy L3",
+      "x_m": 8.0,
+      "y_m": 2.0,
+      "fixed_x": false,
+      "fixed_y": false,
+      "load_x_kN": 0.0,
+      "load_y_kN": 0.0,
+      "displacement": {
+        "ux_mm": -0.3963896534961713,
+        "uy_mm": 0.06073817643401953,
+        "total_mm": 0.40101606386196653
+      },
+      "reaction": {
+        "Rx_kN": 0.0,
+        "Ry_kN": 0.0,
+        "R_total_kN": 0.0
+      }
+    },
+    {
+      "id": 8,
+      "name": "Pas środkowy L4 (Siła F)",
+      "x_m": 11.0,
+      "y_m": 2.0,
+      "fixed_x": false,
+      "fixed_y": false,
+      "load_x_kN": -50.0,
+      "load_y_kN": 0.0,
+      "displacement": {
+        "ux_mm": -0.6577118613447699,
+        "uy_mm": 0.5652121761381345,
+        "total_mm": 0.8672079892438764
+      },
+      "reaction": {
+        "Rx_kN": 0.0,
+        "Ry_kN": 0.0,
+        "R_total_kN": 0.0
+      }
+    },
+    {
+      "id": 9,
+      "name": "Wierzchołek górny",
+      "x_m": 3.5,
+      "y_m": 5.0,
+      "fixed_x": false,
+      "fixed_y": false,
+      "load_x_kN": 0.0,
+      "load_y_kN": 0.0,
+      "displacement": {
+        "ux_mm": -0.3691597317343858,
+        "uy_mm": 0.040009181710380974,
+        "total_mm": 0.3713214808697956
+      },
+      "reaction": {
+        "Rx_kN": 0.0,
+        "Ry_kN": 0.0,
+        "R_total_kN": 0.0
+      }
+    }
+  ],
+  "elements": [
+    {
+      "id": 0,
+      "nodes": [
+        0,
+        1
+      ],
+      "force_kN": -30.555382329751893,
+      "stress_MPa": -12.222152931900757,
+      "state": "compression"
+    },
+    {
+      "id": 1,
+      "nodes": [
+        1,
+        2
+      ],
+      "force_kN": -7.487263468847713,
+      "stress_MPa": -2.994905387539085,
+      "state": "compression"
+    },
+    {
+      "id": 2,
+      "nodes": [
+        2,
+        3
+      ],
+      "force_kN": 6.402920439742943,
+      "stress_MPa": 2.561168175897177,
+      "state": "tension"
+    },
+    {
+      "id": 3,
+      "nodes": [
+        4,
+        5
+      ],
+      "force_kN": -7.115076756936123e-15,
+      "stress_MPa": -2.846030702774449e-15,
+      "state": "zero-force"
+    },
+    {
+      "id": 4,
+      "nodes": [
+        5,
+        6
+      ],
+      "force_kN": -1.8771470527964518,
+      "stress_MPa": -0.7508588211185807,
+      "state": "compression"
+    },
+    {
+      "id": 5,
+      "nodes": [
+        6,
+        7
+      ],
+      "force_kN": -26.969910553414483,
+      "stress_MPa": -10.787964221365792,
+      "state": "compression"
+    },
+    {
+      "id": 6,
+      "nodes": [
+        7,
+        8
+      ],
+      "force_kN": -45.731386373504755,
+      "stress_MPa": -18.292554549401903,
+      "state": "compression"
+    },
+    {
+      "id": 7,
+      "nodes": [
+        4,
+        0
+      ],
+      "force_kN": 5.031119023492321e-15,
+      "stress_MPa": 2.0124476093969287e-15,
+      "state": "zero-force"
+    },
+    {
+      "id": 8,
+      "nodes": [
+        0,
+        5
+      ],
+      "force_kN": -3.7035882198346366,
+      "stress_MPa": -1.4814352879338546,
+      "state": "compression"
+    },
+    {
+      "id": 9,
+      "nodes": [
+        0,
+        6
+      ],
+      "force_kN": -23.36952201395746,
+      "stress_MPa": -9.347808805582984,
+      "state": "compression"
+    },
+    {
+      "id": 10,
+      "nodes": [
+        1,
+        5
+      ],
+      "force_kN": 3.3612221413381698,
+      "stress_MPa": 1.344488856535268,
+      "state": "tension"
+    },
+    {
+      "id": 11,
+      "nodes": [
+        1,
+        6
+      ],
+      "force_kN": 11.64980474455572,
+      "stress_MPa": 4.659921897822288,
+      "state": "tension"
+    },
+    {
+      "id": 12,
+      "nodes": [
+        1,
+        7
+      ],
+      "force_kN": -24.36320631915783,
+      "stress_MPa": -9.74528252766313,
+      "state": "compression"
+    },
+    {
+      "id": 13,
+      "nodes": [
+        2,
+        6
+      ],
+      "force_kN": 8.998570783279643,
+      "stress_MPa": 3.599428313311857,
+      "state": "tension"
+    },
+    {
+      "id": 14,
+      "nodes": [
+        2,
+        7
+      ],
+      "force_kN": 15.943771313930126,
+      "stress_MPa": 6.3775085255720505,
+      "state": "tension"
+    },
+    {
+      "id": 15,
+      "nodes": [
+        2,
+        8
+      ],
+      "force_kN": -7.695352652736537,
+      "stress_MPa": -3.0781410610946147,
+      "state": "compression"
+    },
+    {
+      "id": 16,
+      "nodes": [
+        3,
+        7
+      ],
+      "force_kN": -6.036731283120259,
+      "stress_MPa": -2.4146925132481036,
+      "state": "compression"
+    },
+    {
+      "id": 17,
+      "nodes": [
+        3,
+        8
+      ],
+      "force_kN": 4.77245511926269,
+      "stress_MPa": 1.908982047705076,
+      "state": "tension"
+    },
+    {
+      "id": 18,
+      "nodes": [
+        5,
+        9
+      ],
+      "force_kN": -2.056196029127583,
+      "stress_MPa": -0.8224784116510331,
+      "state": "compression"
+    },
+    {
+      "id": 19,
+      "nodes": [
+        6,
+        9
+      ],
+      "force_kN": 4.112392058255165,
+      "stress_MPa": 1.6449568233020657,
+      "state": "tension"
+    },
+    {
+      "id": 20,
+      "nodes": [
+        7,
+        9
+      ],
+      "force_kN": -3.3155164735709,
+      "stress_MPa": -1.32620658942836,
+      "state": "compression"
+    }
+  ]
+}
