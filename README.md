@@ -9,6 +9,11 @@ A truss linear-elastic FEA solver using the direct stiffness method. Computes no
 │   ├── simple_triangle.json   # 3-bar benchmark
 │   ├── zbiezne.json           # Fully triangulated model
 │   └── rozbiezne.json         # Non-convergent node offset model
+├── output/
+│   ├── rozbiezne_report.json
+│   ├── rozbiezne_dashboard.json
+|   ├── zbiezne_report.json
+│   └── zbiezne_dasboard.png
 ├── truss_io.py                # JSON input parser and SI unit converter
 ├── solver.py                  # Core FEA solver (K assembly, Ku = F solve)
 ├── Truss_reporter.py          # Dashboard plot and JSON report generator
