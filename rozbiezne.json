@@ -1,0 +1,63 @@
+{
+  "title": "Kratownica z Wielokątami (Węzły Przesunięte)",
+  "description": "Kratownica z odsuniętymi punktami mocowania zastrzałów na pasach, tworząca czworokąty wewnątrz kraty",
+  "units": {
+    "length": "m",
+    "force": "kN",
+    "modulus": "GPa",
+    "area": "cm2"
+  },
+  "materials": {
+    "steel": {
+      "E": 210.0
+    }
+  },
+  "sections": {
+    "std_section": {
+      "A": 25.0
+    }
+  },
+  "nodes": [
+    { "id": 0, "name": "Podpora lewa", "x": 2.0, "y": 0.0, "fixed_x": true, "fixed_y": true, "load": [0.0, 0.0] },
+    { "id": 1, "name": "Dolny pas offset L", "x": 4.0, "y": 0.0, "load": [0.0, 0.0] },
+    { "id": 2, "name": "Dolny pas offset R", "x": 6.0, "y": 0.0, "load": [0.0, 0.0] },
+    { "id": 3, "name": "Podpora prawa", "x": 8.0, "y": 0.0, "fixed_x": false, "fixed_y": true, "load": [0.0, 0.0] },
+    { "id": 4, "name": "Pas dolny prawy", "x": 10.0, "y": 0.0, "load": [0.0, 0.0] },
+    { "id": 5, "name": "Pas środkowy L0", "x": 0.0, "y": 2.0, "load": [0.0, 0.0] },
+    { "id": 6, "name": "Pas środkowy offset 1a", "x": 1.6, "y": 2.0, "load": [0.0, 0.0] },
+    { "id": 7, "name": "Pas środkowy offset 1b", "x": 2.4, "y": 2.0, "load": [0.0, 0.0] },
+    { "id": 8, "name": "Pas środkowy offset 2a", "x": 4.6, "y": 2.0, "load": [0.0, 0.0] },
+    { "id": 9, "name": "Pas środkowy offset 2b", "x": 5.4, "y": 2.0, "load": [0.0, 0.0] },
+    { "id": 10, "name": "Pas środkowy offset 3a", "x": 7.6, "y": 2.0, "load": [0.0, 0.0] },
+    { "id": 11, "name": "Pas środkowy offset 3b", "x": 8.4, "y": 2.0, "load": [0.0, 0.0] },
+    { "id": 12, "name": "Pas środkowy L4 (Siła F)", "x": 11.0, "y": 2.0, "load": [-50.0, 0.0] },
+    { "id": 13, "name": "Wierzchołek górny", "x": 3.5, "y": 5.0, "load": [0.0, 0.0] }
+  ],
+  "elements": [
+    { "id": 0, "nodes": [0, 1], "material": "steel", "section": "std_section" },
+    { "id": 1, "nodes": [1, 2], "material": "steel", "section": "std_section" },
+    { "id": 2, "nodes": [2, 3], "material": "steel", "section": "std_section" },
+    { "id": 3, "nodes": [3, 4], "material": "steel", "section": "std_section" },
+    { "id": 4, "nodes": [5, 6], "material": "steel", "section": "std_section" },
+    { "id": 5, "nodes": [6, 7], "material": "steel", "section": "std_section" },
+    { "id": 6, "nodes": [7, 8], "material": "steel", "section": "std_section" },
+    { "id": 7, "nodes": [8, 9], "material": "steel", "section": "std_section" },
+    { "id": 8, "nodes": [9, 10], "material": "steel", "section": "std_section" },
+    { "id": 9, "nodes": [10, 11], "material": "steel", "section": "std_section" },
+    { "id": 10, "nodes": [11, 12], "material": "steel", "section": "std_section" },
+    { "id": 11, "nodes": [5, 0], "material": "steel", "section": "std_section" },
+    { "id": 12, "nodes": [0, 6], "material": "steel", "section": "std_section" },
+    { "id": 13, "nodes": [0, 7], "material": "steel", "section": "std_section" },
+    { "id": 14, "nodes": [1, 7], "material": "steel", "section": "std_section" },
+    { "id": 15, "nodes": [1, 8], "material": "steel", "section": "std_section" },
+    { "id": 16, "nodes": [2, 9], "material": "steel", "section": "std_section" },
+    { "id": 17, "nodes": [2, 10], "material": "steel", "section": "std_section" },
+    { "id": 18, "nodes": [3, 10], "material": "steel", "section": "std_section" },
+    { "id": 19, "nodes": [3, 11], "material": "steel", "section": "std_section" },
+    { "id": 20, "nodes": [4, 11], "material": "steel", "section": "std_section" },
+    { "id": 21, "nodes": [4, 12], "material": "steel", "section": "std_section" },
+    { "id": 22, "nodes": [6, 13], "material": "steel", "section": "std_section" },
+    { "id": 23, "nodes": [8, 13], "material": "steel", "section": "std_section" },
+    { "id": 24, "nodes": [10, 13], "material": "steel", "section": "std_section" }
+  ]
+}

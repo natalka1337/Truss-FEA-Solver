@@ -1,0 +1,30 @@
+{
+  "title": "Kratownica Trójkątna 3-prętowa (Simple Triangle Benchmark)",
+  "description": "Prosta symetryczna kratownica z siłą pionową w węźle wierzchołkowym",
+  "units": {
+    "length": "m",
+    "force": "kN",
+    "modulus": "GPa",
+    "area": "cm2"
+  },
+  "materials": {
+    "steel": {
+      "E": 200.0
+    }
+  },
+  "sections": {
+    "std_section": {
+      "A": 10.0
+    }
+  },
+  "nodes": [
+    { "id": 0, "name": "Podpora lewa", "x": 0.0, "y": 0.0, "support": "pinned", "load": [0.0, 0.0] },
+    { "id": 1, "name": "Podpora prawa", "x": 4.0, "y": 0.0, "support": "roller_x", "load": [0.0, 0.0] },
+    { "id": 2, "name": "Wierzchołek górny", "x": 2.0, "y": 2.0, "load": [0.0, -100.0] }
+  ],
+  "elements": [
+    { "id": 0, "nodes": [0, 1], "material": "steel", "section": "std_section" },
+    { "id": 1, "nodes": [0, 2], "material": "steel", "section": "std_section" },
+    { "id": 2, "nodes": [1, 2], "material": "steel", "section": "std_section" }
+  ]
+}

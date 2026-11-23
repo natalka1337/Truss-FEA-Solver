@@ -1,0 +1,55 @@
+{
+  "title": "Kratownica Trójkątna (Węzły Złączone)",
+  "description": "Kratownica z pełnym stężeniem trójkątnym - zastrzały zbiegają się w wspólnych węzłach",
+  "units": {
+    "length": "m",
+    "force": "kN",
+    "modulus": "GPa",
+    "area": "cm2"
+  },
+  "materials": {
+    "steel": {
+      "E": 210.0
+    }
+  },
+  "sections": {
+    "std_section": {
+      "A": 25.0
+    }
+  },
+  "nodes": [
+    { "id": 0, "name": "Podpora lewa", "x": 2.0, "y": 0.0, "fixed_x": true, "fixed_y": true, "load": [0.0, 0.0] },
+    { "id": 1, "name": "Pas dolny środek", "x": 5.0, "y": 0.0, "load": [0.0, 0.0] },
+    { "id": 2, "name": "Podpora prawa", "x": 8.0, "y": 0.0, "fixed_x": false, "fixed_y": true, "load": [0.0, 0.0] },
+    { "id": 3, "name": "Pas dolny prawy", "x": 10.0, "y": 0.0, "load": [0.0, 0.0] },
+    { "id": 4, "name": "Pas środkowy L0", "x": 0.0, "y": 2.0, "load": [0.0, 0.0] },
+    { "id": 5, "name": "Pas środkowy L1", "x": 2.0, "y": 2.0, "load": [0.0, 0.0] },
+    { "id": 6, "name": "Pas środkowy L2", "x": 5.0, "y": 2.0, "load": [0.0, 0.0] },
+    { "id": 7, "name": "Pas środkowy L3", "x": 8.0, "y": 2.0, "load": [0.0, 0.0] },
+    { "id": 8, "name": "Pas środkowy L4 (Siła F)", "x": 11.0, "y": 2.0, "load": [-50.0, 0.0] },
+    { "id": 9, "name": "Wierzchołek górny", "x": 3.5, "y": 5.0, "load": [0.0, 0.0] }
+  ],
+  "elements": [
+    { "id": 0, "nodes": [0, 1], "material": "steel", "section": "std_section" },
+    { "id": 1, "nodes": [1, 2], "material": "steel", "section": "std_section" },
+    { "id": 2, "nodes": [2, 3], "material": "steel", "section": "std_section" },
+    { "id": 3, "nodes": [4, 5], "material": "steel", "section": "std_section" },
+    { "id": 4, "nodes": [5, 6], "material": "steel", "section": "std_section" },
+    { "id": 5, "nodes": [6, 7], "material": "steel", "section": "std_section" },
+    { "id": 6, "nodes": [7, 8], "material": "steel", "section": "std_section" },
+    { "id": 7, "nodes": [4, 0], "material": "steel", "section": "std_section" },
+    { "id": 8, "nodes": [0, 5], "material": "steel", "section": "std_section" },
+    { "id": 9, "nodes": [0, 6], "material": "steel", "section": "std_section" },
+    { "id": 10, "nodes": [1, 5], "material": "steel", "section": "std_section" },
+    { "id": 11, "nodes": [1, 6], "material": "steel", "section": "std_section" },
+    { "id": 12, "nodes": [1, 7], "material": "steel", "section": "std_section" },
+    { "id": 13, "nodes": [2, 6], "material": "steel", "section": "std_section" },
+    { "id": 14, "nodes": [2, 7], "material": "steel", "section": "std_section" },
+    { "id": 15, "nodes": [2, 8], "material": "steel", "section": "std_section" },
+    { "id": 16, "nodes": [3, 7], "material": "steel", "section": "std_section" },
+    { "id": 17, "nodes": [3, 8], "material": "steel", "section": "std_section" },
+    { "id": 18, "nodes": [5, 9], "material": "steel", "section": "std_section" },
+    { "id": 19, "nodes": [6, 9], "material": "steel", "section": "std_section" },
+    { "id": 20, "nodes": [7, 9], "material": "steel", "section": "std_section" }
+  ]
+}
